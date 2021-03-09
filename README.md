@@ -5,11 +5,9 @@ Home: https://github.com/executablebooks/sphinx-thebe
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-thebe-feedstock/blob/master/LICENSE.txt)
 
 Summary: Add a copy button to each of your code cells.
-
-
 
 Current build status
 ====================
