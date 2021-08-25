@@ -1,5 +1,5 @@
 {% set name = "sphinx-thebe" %}
-{% set version = "0.0.8" %}
+{% set version = "0.0.10" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinx-thebe-{{ version }}.tar.gz
-  sha256: 6229caa99e996776ffdc5c658d9dcce09e0c749727e5aa3d280a2bbf3a72068a
+  sha256: b51ed38e0974c891319aed1554212598597ae12226c7916f2215becc382ae8d7
 
 build:
   number: 0
