@@ -7,7 +7,9 @@ Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-thebe-feedstock/blob/master/LICENSE.txt)
 
-Summary: Add a copy button to each of your code cells.
+Summary: Integrate interactive code blocks into your documentation with Thebe and Binder.
+
+Documentation: https://sphinx-thebe.readthedocs.io
 
 Current build status
 ====================
@@ -117,4 +119,5 @@ Feedstock Maintainers
 
 * [@anirrudh](https://github.com/anirrudh/)
 * [@chrisjsewell](https://github.com/chrisjsewell/)
+* [@conda-forge/jupyter-book](https://github.com/conda-forge/jupyter-book/)
 
