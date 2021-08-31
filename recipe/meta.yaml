@@ -1,14 +1,16 @@
-{% set name = "sphinx-thebe" %}
-{% set version = "0.0.8" %}
-
+{% set version = "0.0.10" %}
 
 package:
-  name: {{ name|lower }}
+  name: sphinx-thebe
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinx-thebe-{{ version }}.tar.gz
-  sha256: 6229caa99e996776ffdc5c658d9dcce09e0c749727e5aa3d280a2bbf3a72068a
+  - url: https://pypi.io/packages/source/s/sphinx-thebe/sphinx-thebe-{{ version }}.tar.gz
+    sha256: b51ed38e0974c891319aed1554212598597ae12226c7916f2215becc382ae8d7
+  # TODO: remove after https://github.com/executablebooks/sphinx-thebe/pull/37
+  - fn: LICENSE-MIT-{{ version }}
+    url: https://raw.githubusercontent.com/executablebooks/sphinx-thebe/v{{ version }}/LICENSE
+    sha256: 6bbda9d2e8e339e9ef31556f437fbc95ef2d1ed3679618f63f0142f95c9b3705
 
 build:
   number: 0
@@ -18,10 +20,10 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
-    - python
-    - sphinx >=1.8
+    - python >=3.6
+    - sphinx >=3.5,<5
 
 test:
   imports:
@@ -33,11 +35,13 @@ test:
 
 about:
   home: https://github.com/executablebooks/sphinx-thebe
-  summary: Add a copy button to each of your code cells.
+  summary: Integrate interactive code blocks into your documentation with Thebe and Binder.
   license: MIT
-  license_file: LICENSE
+  license_file: LICENSE-MIT-{{ version }}
+  doc_url: https://sphinx-thebe.readthedocs.io
 
 extra:
   recipe-maintainers:
     - anirrudh
     - chrisjsewell
+    - conda-forge/jupyter-book
