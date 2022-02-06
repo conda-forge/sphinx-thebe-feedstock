@@ -1,4 +1,4 @@
-{% set version = "0.0.10" %}
+{% set version = "0.1.0" %}
 
 package:
   name: sphinx-thebe
@@ -6,7 +6,7 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/s/sphinx-thebe/sphinx-thebe-{{ version }}.tar.gz
-    sha256: b51ed38e0974c891319aed1554212598597ae12226c7916f2215becc382ae8d7
+    sha256: 504e40ce849c0428fb32a4cf09ee551eb3dd11e079b75b8c3272847c7f7b6113
   # TODO: remove after https://github.com/executablebooks/sphinx-thebe/pull/37
   - fn: LICENSE-MIT-{{ version }}
     url: https://raw.githubusercontent.com/executablebooks/sphinx-thebe/v{{ version }}/LICENSE
