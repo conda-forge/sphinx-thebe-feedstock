@@ -19,7 +19,7 @@ requirements:
     - python >=3.6
   run:
     - python >=3.6
-    - sphinx >=3.5,<5
+    - sphinx >=4,<7
 
 test:
   imports:
