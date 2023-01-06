@@ -1,4 +1,4 @@
-{% set version = "0.1.2" %}
+{% set version = "0.2.0" %}
 
 package:
   name: sphinx-thebe
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/sphinx-thebe/sphinx-thebe-{{ version }}.tar.gz
-  sha256: 756f1dd6643f5abb491f8a27b22825b04f47e05c5d214bbb2e6b5d42b621b85e
+  sha256: 08767a59a70b9458691b2ba35bb6f62a4452946994477ae5839ba53ccb0a5287
 
 build:
   number: 0
@@ -19,7 +19,7 @@ requirements:
     - python >=3.6
   run:
     - python >=3.6
-    - sphinx >=3.5,<5
+    - sphinx >=4,<7
 
 test:
   imports:
