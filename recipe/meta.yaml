@@ -1,25 +1,25 @@
-{% set version = "0.2.1" %}
+{% set version = "0.3.1" %}
 
 package:
   name: sphinx-thebe
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/s/sphinx-thebe/sphinx-thebe-{{ version }}.tar.gz
-  sha256: f4c8c1542054f991b73fcb28c4cf21697e42aba2f83f22348c1c851b82766583
+  url: https://pypi.io/packages/source/s/sphinx-thebe/sphinx_thebe-{{ version }}.tar.gz
+  sha256: 576047f45560e82f64aa5f15200b1eb094dcfe1c5b8f531a8a65bd208e25a493
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
-    - python >=3.6
-    - sphinx >=4,<7
+    - python >=3.8
+    - sphinx >=4
 
 test:
   imports:
